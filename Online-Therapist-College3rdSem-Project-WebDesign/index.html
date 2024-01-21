@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta author="Hage Tassang & Zulen Darjee">
+  <meta name="description" content="Online Booking System for therapist, beauty , healthcare">
+  <title>Online-Therapist-Service/Reservation</title>
+  <link rel="stylesheet" href="./style/style.css">
+  <script src="https://kit.fontawesome.com/dda6ed41f4.js" crossorigin="anonymous"></script>
+</head>
+<!--Body will be block level/width1360px approx with scroll property on background img-->
+<body id="home">
+  <!--Header will have property sticky top when scrolled-->
+  <header id="header">
+    <!--Navbar property will inline block equally spaced out and centered -->
+
+      <nav id="navbar" class="navbar">
+        <a href="#home" class="navbar">home</a>
+        <a href="#book-services-topic" class="navbar">services</a>
+        <img id="logo" src="./Project-Images/logo.png" alt="Planyo logo" width="220px" height="70px">
+        <a href="#book-therapists-topic" class="navbar">therapists</a>
+        <a href="" class="navbar">administration</a>
+      </nav>
+      <article class="center-heading">
+        <div class="article-wrapper">
+          <h2>Book online</h2>
+        <div id="upper-inline"><p>services</p><p id="pink"> &</p><p>therapists</p></div>
+        </div>
+      </article>
+
+      <!-- Add search button here ..-->
+      <div class="calender-search-buttons-container">
+        <div class="calender-search-buttons">
+          <div class="date-box" id="datepicker">
+           <span><input type="date"></span>
+        </div>
+        <div class="select-box">
+          <select name="Services" id="select-services">
+          <option value="">--Please choose an option--</option>
+          <option value="Foot massage">Foot massage</option>
+          <option value="Facial">Facial</option>
+          <option value="Sport massage">Sport massage</option>
+          <option value="Full body massage">Full body massage</option>
+          <option value="Hot stone massage">Hot stone massage</option>
+        </select>
+        </div>
+        
+        <div class="search-button">
+          <button>Search</button>
+        </div>
+          </div>
+        
+        </div>
+      </div>
+      <br><br><br><br><br><br><br><br><br><br>
+      <div class="coupons-wrapper">
+        <div class="coupons-container">
+
+          <div class="coupons">
+            <i class="fa-solid fa-tag fa-1x" style="color: #f1eaee;"></i>
+          </div>
+          <div class="voucher-text">
+            <p>Use the voucher code <bold>planyomassage</bold> and receive 20% discount by booking.</p>
+          </div>
+          
+        </div>
+      </div>
+     
+  </header>
+  <!--THis is service section-->
+  <section id="services" class="blocks-lol">
+    <!--THis is book-service section and imgs-->
+    
+    <div id="book-services" class="blocks-lol">
+      <p id="book-services-topic">1 CASE STUDY : Book Services</p>
+      <div class="half-underline"></div><br><br>
+      <!--Image set up starts here-->
+      <div class="img-wrapper">
+        <div class="img-container"><img src="./Project-Images/Book Services/Hot stone.png" alt="hot stone"><br><pre id="caps-caption">hot stone</pre></div>
+
+      <div class="img-container"><img src="./Project-Images/Book Services/Foot massage.png" alt="foot massage"><br><pre id="caps-caption">foot massage</pre></div>
+
+      <div class="img-container"><img src="./Project-Images/Book Services/Facial.jpg" alt="facial"><br><pre id="caps-caption">facial</pre></div>
+
+      <div class="img-container"><img src="./Project-Images/Book Services/Sport massage.png" alt="sport massage"><br><pre id="caps-caption">sport massage</pre></div>
+
+      <div class="img-container"><img src="./Project-Images/Book Services/fullbodymassage.jpg" alt="full body massage"><br><pre id="caps-caption">full body massage</pre></div>
+      </div>
+      <!--THis is book-service section and imgs and its end here-->
+      
+    </div><br><br>
+    <!--Book therapist section starts here-->
+    <div id="book-therapists" class="blocks-lol">
+      <!--Book therapist topic-->
+      <p id="book-therapists-topic">2 CASE STUDY : Book Services</p>
+      <div class="half-underline"></div><br><br>
+      <!--Book therapist img gallery-->
+      <div class="img-wrapper-therapist">
+        <div class="img-container-therapist"><img src="./Project-Images/Therapist/t1.jpg" id="therapist-img" alt="cathy"><br><pre id="caps-caption">cathy</pre></div>
+
+      <div class="img-container-therapist"><img src="./Project-Images/Therapist/t2.jpg" id="therapist-img" alt="emma"><br><pre id="caps-caption">emma</pre></div>
+
+      <div class="img-container-therapist"><img src="./Project-Images/Therapist/t3.jpg" id="therapist-img" alt="sam"><br><pre id="caps-caption">sam</pre></div>
+
+      <div class="img-container-therapist"><img src="./Project-Images/Therapist/t4.jpg" id="therapist-img" alt="susan"><br><pre id="caps-caption">susan</pre></div>
+
+    </div>
+  </section>
+<!-- SECTION-2 AREA This include a div with img on left and text contain of right-->
+<section id="section-2">
+  <div class="section-2-wrapper">
+<!--Img here as background img of div-->
+    <div class="call-girl-div">
+      <div class="callgirl-bg"></div>
+    </div>
+<!--List item here-->
+    <div class="playno-div">
+      <h2>Why Planyo</h2><br>
+      <div class="playno-underline">
+
+      </div><br>
+      <div class="checkbox-list">
+        <ul>
+          <li><img src="./Project-Images/checkbox.png" height="15px" class="checkbox-img" alt="@">Offer services or/and therapists</li>
+          <li><img src="./Project-Images/checkbox.png" height="15px" class="checkbox-img" alt="@">You can use different locations</li>
+          <li><img src="./Project-Images/checkbox.png" height="15px" class="checkbox-img" alt="@">Staff can receive SMS,EMail,App push notifications</li>
+          <li><img src="./Project-Images/checkbox.png" height="15px" class="checkbox-img" alt="@">Staff can manage their own schedule</li>
+          <li><img src="./Project-Images/checkbox.png" height="15px" class="checkbox-img" alt="@">You can take online payments</li>
+          <li><img src="./Project-Images/checkbox.png" height="15px" class="checkbox-img" alt="@">Products can be purchased by the customer</li>
+          <li><img src="./Project-Images/checkbox.png" height="15px" class="checkbox-img" alt="@">Offer coupons and vouchers</li>
+          <li><img src="./Project-Images/checkbox.png" height="15px" class="checkbox-img" alt="@">Customize the reservation form</li>
+        </ul>
+        
+
+      </div>
+    </div>
+
+  </div>
+  
+</section>
+
+<!--Section-3 area-->
+<section class="section-3">
+  <!--
+    /*section-3*/
+/*section-3 container*/
+/*Section-3 sqaured number box container*/
+/*sqaured number box div*/
+/*span inside div with numbers*/
+/*text div inside sqaured number box div*/
+-->
+
+<!--/*section-3 container*/-->
+<div class="section-3-container">
+  <!--Part-1-->
+  <div class="part-1">
+    <!--/*Section-3 sqaured number box container*/-->
+    <div class="squared-number-box-container">
+    <!--/*sqaured number box div*/-->
+    <div class="sqaured-number-box">
+      <!--
+        /*span inside div with numbers*/
+        /*text div inside sqaured number box div*/-->
+      <div class="numbers-box">1</div>
+      <div class="number-box-text">
+        <h3>online payment processing</h3><br>
+        <p>
+          Use one of over 30 supported payment gateways to automatically process online payments or store cards on file on your server.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="squared-number-box-container">
+    <div class="sqaured-number-box">
+      <!--
+        /*span inside div with numbers*/
+        /*text div inside sqaured number box div*/-->
+      <div class="numbers-box">2</div>
+      <div class="number-box-text">
+        <h3>free iphone & android apps</h3><br>
+        <p>
+          Use our app to administer your account on the go. The app will also immediately notify you of important events such as new reservations or modifications.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="squared-number-box-container">
+    <div class="sqaured-number-box">
+      <!--
+        /*span inside div with numbers*/
+        /*text div inside sqaured number box div*/-->
+      <div class="numbers-box">3</div>
+      <div class="number-box-text">
+        <h3>reports,statistics & analytics</h3><br>
+        <p>Planyo offers a wide variety of reports in HTML, PDF or CSV formats. Activity statistics provide you with up-to-date important business analytics.</p>
+      </div>
+    </div>
+  </div></div>
+  
+  <!--Part2-->
+  <div class="part-2">
+    <div class="squared-number-box-container">
+      <div class="sqaured-number-box">
+        <!--
+          /*span inside div with numbers*/
+          /*text div inside sqaured number box div*/-->
+        <div class="numbers-box">4</div>
+        <div class="number-box-text">
+          <h3>email/sms notifications</h3><br>
+          <p>Save time by automating the sending of email and sms notifications to your customers and staff, as well as invoices and reports.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="squared-number-box-container">
+      <div class="sqaured-number-box">
+        <!--
+          /*span inside div with numbers*/
+          /*text div inside sqaured number box div*/-->
+        <div class="numbers-box">5</div>
+        <div class="number-box-text">
+          <h3>marketing campaigns</h3><br>
+          <p>Use our MailChimp or Zapier extension to run your marketing campaigns.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="squared-number-box-container">
+      <div class="sqaured-number-box">
+        <!--
+          /*span inside div with numbers*/
+          /*text div inside sqaured number box div*/-->
+        <div class="numbers-box">6</div>
+        <div class="number-box-text">
+          <h3>coupons & vouchers</h3><br>
+          <p>Vouchers, coupons, gift certificates: the features make it easy to market, present and sell your offer in an attractive way.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+</div>
+  
+</section>
+
+<!--Section-4-->
+<section class="section-4">
+  <div class="today">
+      <div class="today-wrapper">
+          <h1>Get started today!</h1>
+     <p>Start your free 30 day trial with no risk or obligations. You can choose between a fixed monthly rate starting at CHF 29 or go with a 1% - 1,5% commission. Months<br>without any arrival (off-season months) are free.</p>
+    <div class="space-around-today-item">
+      <div class="today-item"><h4>blank project</h4>
+          <p>Create a new Planyo site with the same look&feel as this<br>demo. No resources are included.</p>
+          <button id="get-started">get started</button></div> 
+        <div class="today-item"> <h4>clone this demo</h4>
+          <p>Add a clone of this demo to your planyo account. Sample<br>resources are included.</p>
+          <button id="get-started">get started</button></div>
+       <div class="today-item"><h4>download scheme</h4>
+          <p>If you already created a Planyo site, you can replace your<br>scheme with the one used in this demo.</p>
+          <a href=""><button id="download-scheme">download scheme</button></a></div>
+    </div>
+      
+      </div>
+     
+
+  </div>
+
+  
+</section>
+
+
+
+
+<!--Footer region-->
+<footer class="footer-section">
+<!--sub-footer-->
+  <div class="sub-footer">
+      <!--sub-footer-container-->
+    <div class="footer-container">
+      <!--sub-footer divs/wrapper-->
+      <div class="footer-divs">
+        <!--footer-item-1-->
+        <div class="footer-item-1">
+
+          <div class="playno-website">
+            <p>Powered by <a href="https://www.planyo.com/?noredirect=1">planyo.com</a></p>
+          </div>
+
+        </div>
+        <!--footer-item-1-->
+        <div class="footer-item-2">
+
+          <div class="social-links">
+
+            <a href=""><i class="fa-brands fa-facebook-f fa-xs"></i></i></a>
+            <a href=""><i class="fa-brands fa-twitter fa-xs"></i></a>
+            <a href=""><i class="fa-solid fa-wifi fa-xs"></i></a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,652 @@
+*{
+  box-sizing: border-box;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: beige;
+}
+/*header container */
+#header{
+  background-color: blanchedalmond;
+  background-image: url(../Project-Images/coverimage/womencandle2.jpeg);
+  background-size: cover;
+  height: 100vh;
+  background-position-x: center;
+  width: 100%;
+}
+
+/*This is bor navbar container */
+#navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 101%;
+  height: 70px;
+  /*background-color: rgb(61, 59, 59);*/
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  background-color: rgb(88, 86, 85);
+  gap: 30px;
+  opacity: 0.9;
+  animation: nav-fixed 10s 8s infinite linear both;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+#logo{
+  padding: 5px 10px;
+}
+/*this is for anchor tags inside navbar */
+.navbar{
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  color:black;
+  font-weight: 100;
+  letter-spacing: 0.5px;
+  display: inline-block;
+  width: auto;
+}
+/*navbar hover effect */
+.navbar:hover{
+  color: rgb(247, 46, 106);
+  font-size: 18px;
+}
+/*article h2 heading and p tag modify*/
+.center-heading{
+  color: azure;
+  text-align: center;
+  padding: 120px;
+
+}
+.center-heading h2{
+  letter-spacing: 0.9px;
+}
+.center-heading h2,#upper-inline{
+  padding-top: 40px;
+}
+.article-wrapper{
+  padding-top: 40px;
+  animation:  top-center 2s ease-in-out 2ms 1 normal both;
+ 
+}
+/*this for p tag with id upper big*/
+#upper-inline>*{
+  display: inline-block;
+  margin: 0 3.5px;
+  letter-spacing: 1px;
+  font-size: 3.5em;
+  text-transform: uppercase;
+  color: white;
+  padding-top: 5px;
+}
+#pink{
+  color: #ff008c;
+}
+/*Buttons styles*/
+.calender-search-buttons-container{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 15px;
+  border-radius: 50px;
+  width: 1000px;
+  margin: auto;
+  background-color: #4e494d;
+  opacity: 0.8;
+  
+}
+.calender-search-buttons{
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  padding: 15px;
+  
+  width: 700px;
+  
+}
+#datepicker span input{width:150px;height:35px; } 
+#datepicker > input:hover{cursor: pointer;}
+#select-services{
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+}
+#select-services:hover{
+  cursor: pointer;
+}
+.search-button button{
+  width: 150px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #ff008c;
+  color: white;
+  font-size: 18px;
+}
+.search-button>button:hover{
+  cursor: pointer;
+}
+.coupons-wrapper{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  opacity: 0.7;
+  
+}
+/*Discount coupons*/
+.coupons-container{
+  height: 10vh;
+  background-color: #922c64;
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+.coupons{
+  
+  border-radius: 50%;
+  background-color: rgb(231, 15, 80);
+  display: inline-block;
+}
+.coupons i{
+  padding: 5px 3px;
+  text-align: center;
+  width: 35px;
+  height: 35px;
+  border-radius: 100%;
+  border: 1px solid  #ff008c;
+}
+.voucher-text{
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+  font-size: 1.2em;
+  display: inline-block;
+  
+  padding: 4px;
+  
+
+}
+.voucher-text bold{
+  text-transform: uppercase;
+
+}
+.
+/*section-1 area of services /diplay property is flexbox centered item*/
+/*wrapper container for both div book-services and book therapist will be block*/
+.blocks-lol{
+  display: block;
+  width:100%;
+}
+#book-services-topic{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  letter-spacing: 0.9px;
+
+
+}
+/*Book services area*/
+.half-underline{
+  background-color: aquamarine;
+  width: 120px;
+  border-top: 3px solid #ff008c ;
+  border-width: 2px;
+  border-radius: 0.7px;
+  margin:auto
+}
+/*Image items with fig captions and grayscale image and on hover contrast img animation that will be yeah this is it and finally a underline property on hover
+img property will be inline block
+and it will again have a wrapper to justify content to and align item center
+*/
+.img-container{
+  width: 170px;
+  display: inline-block;
+  margin-left: 5px;
+}
+.img-wrapper{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 20px;
+}
+#caps-caption{
+  text-transform: capitalize;
+  font-weight: 300;
+  text-align: center;
+}
+.img-container:hover{
+  border-bottom: 2px solid #ff008c;
+}
+
+/*Here property for follow same as book service container and rest */
+
+/*Book therapist area*/
+/*Image items with fig captions and grayscale image and on hover contrast img animation that will be yeah this is it and finally a underline property on hover
+img property will be inline block
+and it will again have a wrapper to justify content to and align item center
+*/
+#book-therapists-topic{
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 30px;
+  letter-spacing: 0.9px;
+}
+
+.img-container-therapist{
+  display: inline-block;
+  margin-left: 5px;
+  padding: 20px;
+  
+}
+.img-container-therapist:hover{
+  border-bottom: 2px solid #ff008c;
+}
+
+.img-wrapper-therapist{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+#caps-caption{
+  text-transform: capitalize;
+  font-weight: 300;
+  text-align: center;
+}
+#therapist-img{
+  width: 230px;
+  height:225px;
+  border-radius: 50%;
+}
+/*Section-2 wrapper */
+#section-2{
+}
+.section-2-wrapper{
+  padding-top: 30px;
+  height: 507px;
+  display: flex;
+  width: 100%;
+}
+/*Girl img div 45% of width of wrapper div*/
+.call-girl-div{
+  width: 45%;
+  border-collapse: collapse;
+  background-color: #ff008c;
+  background-image: url(../Project-Images/callgirl2.jpg);
+  background-size: cover;
+  float: left;
+  display: block;
+}
+/*Text area div width with 59% of parent width float on right*/
+.playno-div{
+  width: 59%;
+  border-collapse: collapse;
+  background-color: #641c56;
+  float: right;
+  display: block;
+}
+.playno-div h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 1.7em;
+  padding-top: 100px;
+  padding-left: 120px;
+  color: azure;
+}
+.playno-underline{
+  width: 120px;
+  border-top: 2px solid#ff008c;
+  margin-left: 120px;
+
+}
+/*Checkbox style and img*/
+.checkbox-list{
+  padding-left: 170px;
+  overflow: hidden;
+}
+.checkbox-list ul{
+  list-style: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 0.8em;
+  font-style: normal;
+  color: white;
+  letter-spacing: 1px;
+  word-spacing: 0.5px;
+}
+.checkbox-img{
+  padding-left: 3px;
+}
+/*section-3*/
+.section-3{
+  background-color: #2e1a2a;
+}
+/*section-3 container*/
+.section-3-container{
+  display: grid;
+  gap: 35px;
+  justify-content: center;
+  padding: 70px 0;
+}
+
+
+/*container of squared number box container*/
+/*part1*/
+.part-1{
+  display: flex;
+}
+/*part2*/
+.part-2{
+  display: flex;
+}
+/*Section-3 sqaured number box container*/
+.sqaured-number-box{
+  width: 450px;
+  height: 150px;
+  /*border: 2px solid pink;*/
+  display: flex;
+  gap:30px;
+}
+/*sqaured number box div*/
+.numbers-box{
+  color: white;
+  font-size: large;
+  width:75px;
+  height: 70px;
+  border: 2px solid rgba(255, 68, 140, 0.76);
+  border-width: 5px;
+  text-align: center;
+  padding-top: 20px;
+  display: inline-block;
+  animation: number-box-360 4s ease-in-out 3ms 1 normal both;
+
+}
+/*text div inside sqaured number box div*/
+.number-box-text{
+  padding-top: 20px;
+  display: inline-block;
+  width: 350px;
+  /*border: 1px solid red;*/
+}
+.number-box-text h3{
+  text-transform: capitalize;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  
+}
+.number-box-text p{
+  font-family: 'Times New Roman', Times, serif;
+  color:white
+}
+
+/*Section-4 styles*/
+.today{
+  background-color: rgb(247, 46, 106);
+  
+  color: white;
+  padding: 20px 5px;
+  display: flex;
+  justify-content: center;
+  font-family: 'Times New Roman', Times, serif;
+  animation: slide-in-from-left 3s ease-in-out 10ms 1 normal both;
+  
+
+}
+.today-wrapper{
+  padding: 20px 0;
+  font-family: 'Times New Roman', Times, serif;
+}
+.today-wrapper>*{
+  padding: 15px 0;
+}
+#get-started{
+    height: 30px;
+    width: 130px;
+    padding: 2px 4px;
+    text-align: center;  
+    background-color: rgb(247, 46, 106);
+    border: 1px solid white;
+    text-transform: uppercase;
+    color: white;
+
+    font-family: 'Times New Roman', Times, serif;
+  
+}
+#get-started:hover{
+  background-color: white;
+  color: #2e1a2a;
+}
+#download-scheme{
+    height: 30px;
+    width: 180px;
+    padding: 2px 4px;
+    text-align: center;  
+    background-color: rgb(247, 46, 106);
+    border: 1px solid white;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+
+}
+#download-scheme:hover{
+  background-color: white;
+  color: #2e1a2a;
+}
+.today-item{
+    
+    width: 350px;
+    display: inline-block;
+    font-family: 'Times New Roman', Times, serif;
+}
+.today-item h4{
+  text-transform: capitalize;
+  font-weight: 200;
+  font-size: 1.1em;
+}
+.today-item >*{
+  padding: 12px 0;
+}
+
+
+.space-around-today-item{
+    display: flex;
+    align-items: center;
+    gap:30px;
+
+}
+.space-around-today-item{
+  padding: 40px 0;
+}
+.today-footer{
+    background-color: black;
+    color: white;
+    height: 80px;
+    
+    
+}
+
+/*footer-section*/
+/*Footer-container*/
+.footer-container{
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+/*Footer-divs*/
+.footer-divs{
+  display: flex;
+  justify-items: center;
+}
+.sub-footer{
+  background-color: black;
+}
+.playno-website a{
+  text-decoration: none;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.playno-website a:hover{
+  text-decoration: underline;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.playno-website p{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+}
+.playno-website{
+  font-size: small;
+}
+.footer-item-1{
+  padding: 7px 0;
+  width: 700px;
+  
+}
+/*social links*/
+.social-links{
+  text-align: right;
+}
+.social-links a{
+  margin-right: 6px;
+  margin-left: 6px;
+  background-color: black;
+}
+.social-links a>i{
+  padding: 0 4px;
+}
+.social-links :nth-child(1){
+  color: white;
+  width: 25px;
+  height: 20px;
+  
+}
+.social-links :nth-child(2){
+  color: white;
+  width: 25px;
+  height: 20px;
+  
+}
+.social-links :nth-child(3){
+  color: white;
+  width: 25px;
+  height: 20px;
+  
+}
+.social-links a:hover{
+  background-color: aliceblue;
+}
+.social-links a>i:hover{
+  color: #2e1a2a;
+  
+  
+}
+.footer-item-2{
+  padding: 7px 0;
+  width: 700px;
+  
+}
+.footer-item-1,.footer-item-2{
+  display: inline-block;
+}
+.playno-website,.social-links{
+  margin: 0 4px;
+}
+
+
+
+/*All animation to be done here*/
+
+/*header,navbar,sections,footer*/
+.img-container,.img-container-therapist{
+  filter: grayscale(100%);
+}
+.img-container:hover,.img-container-therapist:hover{
+  filter: grayscale(0%);
+}
+
+
+
+/*web-page animation and custom animation keyframes*/
+/*section-4 box animation*/
+@keyframes number-box-360 {
+  0%{
+    transform: rotate(0deg);
+  }
+  50%{
+    transform: rotate(180deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+  
+}
+/*navbar animation*/
+@keyframes nav-fixed {
+  0%{
+    position: fixed;
+    opacity: 0.8;
+    color: white;
+    background-color: rgb(88, 86, 85);
+  }
+  50%{
+    position: fixed;
+    background-color: aliceblue;
+    opacity: 0.5;
+    color: white;
+  }
+  75%{
+    position: fixed;
+    background-color: aliceblue;
+    opacity: 0.5;
+    color: white;
+  }
+  100%{
+    position: fixed;
+    background-color: aliceblue;
+    opacity: 0.5;
+    color: white;
+  }
+
+  
+}
+@keyframes slide-in-from-left {
+  0%{
+    transform: translateX(-100%);
+  }
+  40%{
+    transform: translateX(-80%);
+  }
+  70%{
+    transform: translateX(-50%);
+  }
+  80%{
+    transform: translateX(-10%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+  
+  
+}
+/*Top-to-center animation of article section*/
+@keyframes top-center {
+  0%{
+    
+  }
+  40%{
+    transform: translateY(-100%);
+  }
+  70%{
+    transform: translateY(-95%);
+    
+    
+  }
+  90%{
+    transform: translateY(-90%);
+  }
+  100%{
+    transform: translateY(0%);
+  }
+  
+}
+
+  
